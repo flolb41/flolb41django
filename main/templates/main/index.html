@@ -1,0 +1,27 @@
+{% load static %}
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flolb41-dev41 | Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}" />  
+  </head>
+  <body>
+    <div class="banniere">
+      <div class="centered">
+        <h1>Le Blanc Florian</h1>
+        <h2>Flolb41-Dev41</h2>
+        <nav>
+          <a href="{% url 'main:index' %}">Accueil</a>
+          <a href="{% url 'technologies:index' %}">Les technologies</a>
+          <a href="{% url 'portfolio:index' %}">Portfolio</a>
+          <a href="{% url 'about:index' %}">Qui suis-je ?</a>
+          <a href="{% url 'contact:index' %}">Contact</a>
+        </nav>
+        <h3>Le Code sur mesure, accessible à tous.</h3>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+{% load static %}
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flolb41-dev41 | Contact</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'contact/style.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/global.css' %}"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="centered">
+        <h1>Le Blanc Florian</h1>
+        <h2>Flolb41-Dev41</h2>
+        <nav>
+          <a href="{% url 'main:index' %}">Accueil</a>
+          <a href="{% url 'technologies:index' %}">Les technologies</a>
+          <a href="{% url 'portfolio:index' %}">Portfolio</a>
+          <a href="{% url 'about:index' %}">Qui suis-je ?</a>
+          <a href="{% url 'contact:index' %}">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <section class="contact">
+      <h3>Où me trouver ?</h3>
+      <div class="social-network">
+        <a href="https://www.codeur.com/-florianlv5mp"
+          ><img
+            src="{% static 'contact/images/codeur.jpeg' %}"
+            alt="logo Codeur"
+          />Codeur</a
+        >
+        <a href="https://www.malt.fr/profile/florianleblanc2"
+          ><img
+            src="{% static 'contact/images/malt-logo.jpg' %}"
+            alt="logo Malt"
+          />Malt</a
+        >
+        <a href="https://www.linkedin.com/in/florian-le-blanc-0291b11ab/"
+          ><img
+            src="{% static 'contact/images/Linkedin-logo.jpg' %}"
+            alt="logo Linkedin"
+          />Linkedin</a
+        >
+        <a href="https://github.com/flolb41"
+          ><img
+            src="{% static 'contact/images/github.png' %}"
+            alt="logo Github"
+          />Github</a
+        >
+        <a href="https://my.indeed.com/p/florianl-uiucx5s"
+          ><img
+            src="{% static 'contact/images/indeed.png' %}"
+            alt="logo Indeed"
+          />Indeed</a
+        >
+        <a href="mailto:florian.le.blanc.dev41@gmail.com"
+          ><img
+            src="{% static 'contact/images/email.png' %}"
+            alt="logo email"
+          />Par e-mail</a
+        >
+      </div>
+      <div class="google-map">
+        <iframe
+          width="100%"
+          height="400"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=8%20rue%20du%20pommier%20rond,%2041190%20Landes%20le%20Gaulois+(Flolb41-Dev41)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
+    </section>
+  </body>
+</html>

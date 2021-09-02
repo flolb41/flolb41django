@@ -1,0 +1,47 @@
+{% load static %}
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flolb41-Dev41 | Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'technologies/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}" />   
+  </head>
+  <body>
+    <div id="header">
+      <div id="titre_accueil">
+        <h1>Le Blanc Florian</h1>
+        <h2>Flolb41-Dev41</h2>
+      </div>
+      <nav>
+        <a href="{% url 'main:index' %}">Accueil</a>
+        <a href="{% url 'technologies:index' %}">Les technologies</a>
+        <a href="{% url 'portfolio:index' %}">Portfolio</a>
+        <a href="{% url 'about:index' %}">Qui suis-je ?</a>
+        <a href="{% url 'contact:index' %}">Contact</a>
+      </nav>
+    </div>
+    <section class="technos">
+      {% for i in technologies %}
+      <div class="card">
+        <div class="header_card">
+          <img class="logo" src="/{{i.logo}}" alt="{{i.nom}}" />
+          <div class="badge_tech">
+            <h3 class="nom_techno">{{i}}</h3>
+            {% if i.frontend %}
+            <div class="badge_front">Front-End</div>
+            {% endif %} {% if i.backend %}
+            <div class="badge_back">Back-End</div>
+            {% endif %}
+          </div>
+        </div>
+        <p class="desc">{{i.description}}</p>
+        <div class="divider"></div>
+      </div>
+      {% endfor %}
+    </section>
+  </body>
+</html>

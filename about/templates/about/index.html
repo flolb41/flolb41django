@@ -1,0 +1,85 @@
+{% load static %}
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flolb41-dev41 | A propos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'about/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/global.css' %}" />   
+  </head>
+  <body>
+    <div id="header">
+      <h1>Le Blanc Florian</h1>
+      <h2>Flolb41-Dev41</h2>
+      <nav>
+        <a href="{% url 'main:index' %}">Accueil</a>
+        <a href="{% url 'technologies:index' %}">Les technologies</a>
+        <a href="{% url 'portfolio:index' %}">Portfolio</a>
+        <a href="{% url 'about:index' %}">Qui suis-je ?</a>
+        <a href="{% url 'contact:index' %}">Contact</a>
+      </nav>
+    </div>
+    <section>
+      <div class="img">
+        <img
+          id="ph_flo"
+          src="{% static 'about/images/photo_me.png' %}"
+          alt="photo de Florian Le Blanc"
+        />
+      </div>
+      <div class="about_me">
+        <div class="about_enfance">
+          <h3>Enfance</h3>
+          <p>
+            Alors que je n’ai que 6 ans, mes parents sautent le pas et
+            découvrent l’informatique en 1990. Ils acquièrent notre premier pc
+            familial. Un Amstrad PC3086. Je ferai mes premières armes dessus,
+            devenant très vite « accro ». Je passerai ainsi plusieurs années de
+            ma jeunesse à découvrir, l’overclocking, le watercooling entre
+            autres… dans une chambre transformée en atelier de geek.
+          </p>
+        </div>
+        <div class="start_active_life">
+          <h3>Début de vie active</h3>
+          <p>
+            Après une scolarité ou mes profs disent toujours « Pourrait tutoyer
+            les sommets si il s’en donnait la peine ! », je parviens jusqu’au
+            bac. Après avoir choisi STI électronique, et avoir obtenu le diplôme
+            en 2003, j’intègre l’école de Maistrance à Brest. Ecole de
+            sous-officier de la Marine Nationale. Où je me rends vite compte que
+            je manque d’air… J’enchaine ensuite les petits boulots, qui, avec le
+            recul auront été une bonne « école ».
+          </p>
+        </div>
+        <div class="first_jobs">
+          <h3>Première carrière</h3>
+          <p>
+            En 2007, j’entre dans le transport de fond complètement par hasard.
+            Suite à une annonce ANPE (et oui, à l’époque Pole Emploi n’existe
+            pas encore…) Je me fais un petit nom dans le milieu. Je travaille
+            même à tour de rôle pour les deux plus gros concurrents. J’apprécie
+            le métier ! Et finalement, au bout de 13 ans, une maladie
+            professionnelle me touche et mets fin à cette aventure.
+          </p>
+        </div>
+        <div class="reconversion">
+          <h3>Reconversion vers une passion</h3>
+          <p>
+            En arrêt depuis Aout 2019, je sais que mon avenir de plus en plus
+            sombre dans ce métier. J’en profite pour faire le point moi-même.
+            Très vite, je me rends compte que ce licenciement sera un mal pour
+            un bien. Lors d’une discussion avec mon père, il me fait part d’un
+            reportage qu’il a vu sur les métiers qui recrutent. C’est lui qui me
+            mets la puce à l’oreille. J’en profite donc pour mettre tout ce
+            temps en arrêt de travail pour apprendre et me former. Je suis
+            officiellement licencié en avril 2020. J’ai déjà quelques notions de
+            code, je décide d’officialiser mes connaissances avec une formation
+            reconnue bac + 2 chez OpenClassrooms. Formation que je valide fin
+            mars 2021.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

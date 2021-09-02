@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("/static/images/code_planete.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  margin: 0;
+  font-family: "merienda One", cursive;
+}
+
+#header {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.6)
+    );
+}
+h1 {
+  padding-top: 10px;
+  font-size: 3em;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+}
+
+a {
+  display: block;
+  margin: auto;
+  text-decoration: none;
+  border: 2px solid #218db4;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+  font-size: 1.5em;
+}
+a:hover {
+  transition-duration: 1s;
+  background-color: #1a6b92;
+}
+a:active {
+    background-color: #1a6b92;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  a {  
+  font-size: 1em;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

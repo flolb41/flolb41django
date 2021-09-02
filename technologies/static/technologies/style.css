@@ -1,0 +1,58 @@
+h3 {
+  font-size: 2em;
+}
+
+.desc {
+  font-size: 1.5em;
+}
+
+.divider {
+  border: 1px solid white;
+  margin: 20px auto;
+}
+.technos {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    );
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 70%;
+  margin: 40px 0;
+  margin: 2px solid blue;
+
+}
+
+.header_card {
+  display: flex;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.badge_tech {
+  width: 100%;
+  text-align: center;
+
+}
+
+.badge_back, .badge_front {
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 10px;
+  width: 30%;
+}
+.badge_front {
+  background-color: green;
+}
+
+.badge_back {
+  background-color: red;
+}
