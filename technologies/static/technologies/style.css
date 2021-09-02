@@ -19,6 +19,8 @@ h3 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 90%;
+  margin: 20px auto;
 }
 
 .card {
