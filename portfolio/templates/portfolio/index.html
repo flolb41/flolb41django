@@ -1,36 +1,6 @@
-{% load static %}
+{% extends 'base.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'portfolio/style.css' %}" />
 
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flolb41-Dev41 | Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="{% static 'portfolio/style.css' %}" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/global.css' %}"
-    />
-  </head>
-  <body>
-    <div id="header">
-      <div id="titre_accueil">
-        <h1>Le Blanc Florian</h1>
-        <h2>Flolb41-Dev41</h2>
-      </div>
-      <nav>
-        <a href="{% url 'main:index' %}">Accueil</a>
-        <a href="{% url 'technologies:index' %}">Les technologies</a>
-        <a href="{% url 'portfolio:index' %}">Portfolio</a>
-        <a href="{% url 'about:index' %}">Qui suis-je ?</a>
-        <a href="{% url 'contact:index' %}">Contact</a>
-      </nav>
-    </div>
     <section class="portfolio">
       {% for i in portfolio %}
       <div class="card">
@@ -52,5 +22,5 @@
         pertinence suivant vos besoins.
       </div>
     </section>
-  </body>
-</html>
+
+{% endblock %}

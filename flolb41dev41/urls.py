@@ -24,6 +24,5 @@ urlpatterns = [
     path('api/', include('technologies.api_urls')), 
     path('technologies/', include('technologies.urls')),
     path('', include('main.urls')),
-    
 
 ]
